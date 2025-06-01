@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body onmousemove="updateCursor(event)">
+  <div class="container">
+    <button id="toggle-theme">Toggle Dark Mode</button>
+    <h1>Currency Converter</h1>
+    <div class="converter">
+      <div class="currency-input">
+        <img id="from-flag" src="flags/us.svg" alt="from flag" />
+        <select id="from-currency"></select>
+      </div>
+      <input type="number" id="amount" placeholder="Enter amount" />
+      <div class="currency-input">
+        <img id="to-flag" src="flags/eur.svg" alt="to flag" />
+        <select id="to-currency"></select>
+      </div>
+      <div id="result">Converted amount will appear here</div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
